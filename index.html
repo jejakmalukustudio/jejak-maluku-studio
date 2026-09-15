@@ -1,10 +1,14 @@
 <!DOCTYPE html>
+
 <html lang="id">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <meta name="description" content="Jejak Maluku Studio - Mengabadikan cerita Maluku melalui video animasi, sejarah, budaya, kampung, UMKM, perusahaan dan instansi.">
+
 <meta name="theme-color" content="#123d63">
+
 <title>Jejak Maluku Studio | Cerita Maluku Untuk Dunia</title>
 
 <style>
@@ -20,406 +24,1484 @@
   --hijau:#1fa855;
   --shadow:0 12px 35px rgba(18,61,99,.08);
 }
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{font-family:Arial,Helvetica,sans-serif;background:#fff;color:#172033;line-height:1.6}
-a{text-decoration:none}
-.container{width:92%;max-width:1180px;margin:auto}
-section{padding:78px 0}
-header{position:sticky;top:0;z-index:9999;background:rgba(255,255,255,.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
-.navbar{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.logo{color:var(--biru);font-size:19px;font-weight:900;white-space:nowrap}
-.logo span{color:var(--emas)}
-.nav-menu{display:flex;gap:22px;list-style:none}
-.nav-menu a{color:#445264;font-size:14px;font-weight:700}
-.nav-menu a:hover{color:var(--emas)}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#fff;
+  color:#172033;
+  line-height:1.6;
+}
+
+a{
+  text-decoration:none;
+}
+
+.container{
+  width:92%;
+  max-width:1180px;
+  margin:auto;
+}
+
+section{
+  padding:78px 0;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+  position:sticky;
+  top:0;
+  z-index:9999;
+  background:rgba(255,255,255,.97);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);
+}
+
+.navbar{
+  min-height:72px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+
+.logo{
+  color:var(--biru);
+  font-size:19px;
+  font-weight:900;
+  white-space:nowrap;
+}
+
+.logo span{
+  color:var(--emas);
+}
+
+.nav-menu{
+  display:flex;
+  gap:22px;
+  list-style:none;
+}
+
+.nav-menu a{
+  color:#445264;
+  font-size:14px;
+  font-weight:700;
+  transition:.25s;
+}
+
+.nav-menu a:hover{
+  color:var(--emas);
+}
+
+/* =========================
+   HERO
+========================= */
 
 .hero{
-  min-height:650px;display:flex;align-items:center;
-  background:radial-gradient(circle at 90% 20%,rgba(214,154,37,.15),transparent 30%),
-  linear-gradient(135deg,#f6fbff 0%,#fff 55%,#fffaf0 100%);
+  min-height:650px;
+  display:flex;
+  align-items:center;
+  background:
+    radial-gradient(
+      circle at 90% 20%,
+      rgba(214,154,37,.15),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #f6fbff 0%,
+      #fff 55%,
+      #fffaf0 100%
+    );
 }
-.hero-content{max-width:850px}
-.badge{display:inline-block;padding:8px 15px;border-radius:50px;background:var(--emas-muda);color:#9b6907;font-size:13px;font-weight:800;margin-bottom:18px}
-.hero h1{color:var(--biru);font-size:clamp(40px,6vw,68px);line-height:1.06;margin-bottom:20px}
-.hero h1 span{color:var(--emas)}
-.hero p{max-width:760px;color:#5e6a79;font-size:18px;line-height:1.8;margin-bottom:28px}
-.hero-buttons{display:flex;flex-wrap:wrap;gap:12px}
+
+.hero-content{
+  max-width:850px;
+}
+
+.badge{
+  display:inline-block;
+  padding:8px 15px;
+  border-radius:50px;
+  background:var(--emas-muda);
+  color:#9b6907;
+  font-size:13px;
+  font-weight:800;
+  margin-bottom:18px;
+}
+
+.hero h1{
+  color:var(--biru);
+  font-size:clamp(40px,6vw,68px);
+  line-height:1.06;
+  margin-bottom:20px;
+}
+
+.hero h1 span{
+  color:var(--emas);
+}
+
+.hero p{
+  max-width:760px;
+  color:#5e6a79;
+  font-size:18px;
+  line-height:1.8;
+  margin-bottom:28px;
+}
+
+.hero-buttons{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+}
+
+/* =========================
+   BUTTON
+========================= */
 
 .btn{
-  display:inline-flex;align-items:center;justify-content:center;min-height:46px;
-  padding:12px 20px;border-radius:10px;font-size:14px;font-weight:800;
-  transition:.25s;cursor:pointer
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:46px;
+  padding:12px 20px;
+  border-radius:10px;
+  font-size:14px;
+  font-weight:800;
+  transition:.25s;
+  cursor:pointer;
+  border:1px solid transparent;
 }
-.btn:hover{transform:translateY(-2px)}
-.btn-primary{background:var(--biru);color:#fff;box-shadow:0 8px 20px rgba(18,61,99,.16)}
-.btn-primary:hover{background:var(--biru-gelap)}
-.btn-secondary{background:#fff;color:var(--biru);border:1px solid var(--border)}
-.btn-secondary:hover{border-color:var(--emas);color:#9b6907}
-.btn-whatsapp{background:var(--hijau);color:#fff;border:1px solid var(--hijau)}
-.btn-whatsapp:hover{background:#168b45}
 
-.section-heading{max-width:760px;margin:0 auto 42px;text-align:center}
-.section-heading h2{color:var(--biru);font-size:clamp(29px,4vw,38px);line-height:1.2;margin-bottom:12px}
-.section-heading p{color:var(--abu);font-size:15px}
+.btn:hover{
+  transform:translateY(-2px);
+}
 
-.services{background:#fff}
-.services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
-.service-card{display:flex;flex-direction:column;min-height:330px;padding:27px 22px;background:#fff;border:1px solid var(--border);border-radius:18px;box-shadow:var(--shadow);transition:.3s}
-.service-card:hover{transform:translateY(-6px);box-shadow:0 20px 45px rgba(18,61,99,.13)}
-.service-icon{width:58px;height:58px;display:flex;align-items:center;justify-content:center;border-radius:15px;background:var(--emas-muda);font-size:28px;margin-bottom:18px}
-.service-card h3{color:var(--biru);font-size:19px;line-height:1.35;margin-bottom:10px}
-.service-card p{color:var(--abu);font-size:14px;line-height:1.7;margin-bottom:20px}
-.card-btn{margin-top:auto;display:flex;align-items:center;justify-content:center;min-height:44px;padding:10px 14px;border-radius:9px;background:var(--biru);color:#fff;font-size:13px;font-weight:800;transition:.25s}
-.card-btn:hover{background:var(--emas);transform:translateY(-2px)}
+.btn-primary{
+  background:var(--biru);
+  color:#fff;
+  box-shadow:0 8px 20px rgba(18,61,99,.16);
+}
+
+.btn-primary:hover{
+  background:var(--biru-gelap);
+}
+
+.btn-secondary{
+  background:#fff;
+  color:var(--biru);
+  border:1px solid var(--border);
+}
+
+.btn-secondary:hover{
+  border-color:var(--emas);
+  color:#9b6907;
+}
+
+.btn-whatsapp{
+  background:var(--hijau);
+  color:#fff;
+  border:1px solid var(--hijau);
+}
+
+.btn-whatsapp:hover{
+  background:#168b45;
+}
+
+/* =========================
+   SECTION HEADING
+========================= */
+
+.section-heading{
+  max-width:760px;
+  margin:0 auto 42px;
+  text-align:center;
+}
+
+.section-heading h2{
+  color:var(--biru);
+  font-size:clamp(29px,4vw,38px);
+  line-height:1.2;
+  margin-bottom:12px;
+}
+
+.section-heading p{
+  color:var(--abu);
+  font-size:15px;
+}
+
+/* =========================
+   SERVICES
+========================= */
+
+.services{
+  background:#fff;
+}
+
+.services-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+}
+
+.service-card{
+  display:flex;
+  flex-direction:column;
+  min-height:350px;
+  padding:27px 22px;
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:18px;
+  box-shadow:var(--shadow);
+  transition:.3s;
+}
+
+.service-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 20px 45px rgba(18,61,99,.13);
+}
+
+.service-icon{
+  width:58px;
+  height:58px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:15px;
+  background:var(--emas-muda);
+  font-size:28px;
+  margin-bottom:18px;
+}
+
+.service-card h3{
+  color:var(--biru);
+  font-size:19px;
+  line-height:1.35;
+  margin-bottom:10px;
+}
+
+.service-card p{
+  color:var(--abu);
+  font-size:14px;
+  line-height:1.7;
+  margin-bottom:20px;
+}
+
+.card-btn{
+  margin-top:auto;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:44px;
+  padding:10px 14px;
+  border-radius:9px;
+  background:var(--biru);
+  color:#fff;
+  font-size:13px;
+  font-weight:800;
+  transition:.25s;
+}
+
+.card-btn:hover{
+  background:var(--emas);
+  transform:translateY(-2px);
+}
+
+.card-btn.whatsapp{
+  background:var(--hijau);
+}
+
+.card-btn.whatsapp:hover{
+  background:#168b45;
+}
+
+/* =========================
+   KAMPUNG
+========================= */
 
 .kampung{
   background:linear-gradient(135deg,var(--biru),#164e7b);
   color:#fff;
 }
-.kampung-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
-.kampung h2{font-size:clamp(30px,4vw,44px);line-height:1.15;margin-bottom:15px}
-.kampung h2 span{color:#ffd66e}
-.kampung p{color:#dbe8f2;margin-bottom:22px}
-.kampung-box{background:#fff;color:#172033;padding:28px;border-radius:20px;box-shadow:0 20px 50px rgba(0,0,0,.15)}
-.kampung-box h3{color:var(--biru);margin-bottom:16px;font-size:22px}
-.steps{list-style:none}
-.steps li{display:flex;gap:12px;align-items:flex-start;padding:11px 0;border-bottom:1px solid var(--border);font-size:14px}
-.steps li:last-child{border-bottom:0}
-.step-number{flex:0 0 30px;height:30px;border-radius:50%;background:var(--emas-muda);color:#9b6907;display:flex;align-items:center;justify-content:center;font-weight:900}
 
-.video-section{background:var(--abu-muda)}
-.video-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:26px;max-width:1050px;margin:auto}
-.video-card{overflow:hidden;background:#fff;border:1px solid var(--border);border-radius:18px;box-shadow:var(--shadow)}
-.video-frame{position:relative;width:100%;aspect-ratio:16/9;background:#000}
-.video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-.video-info{padding:19px 21px 21px}
-.video-info h3{color:var(--biru);font-size:18px;margin-bottom:7px}
-.video-info p{color:var(--abu);font-size:14px}
+.kampung-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:45px;
+  align-items:center;
+}
 
-.social-section{background:#fff}
-.social-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;max-width:900px;margin:auto}
-.social-card{padding:28px;border:1px solid var(--border);border-radius:18px;box-shadow:var(--shadow)}
-.social-card h3{color:var(--biru);font-size:21px;margin-bottom:10px}
-.social-card p{color:var(--abu);font-size:14px;margin-bottom:18px}
+.kampung h2{
+  font-size:clamp(30px,4vw,44px);
+  line-height:1.15;
+  margin-bottom:15px;
+}
 
-.about{background:linear-gradient(135deg,#f7fbfd,#fff)}
-.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:45px;align-items:center}
-.about-box{padding:32px;background:#fff;border:1px solid var(--border);border-radius:20px;box-shadow:var(--shadow)}
-.about-box h2,.about-box h3{color:var(--biru);margin-bottom:15px}
-.about-box h2{font-size:34px;line-height:1.2}
-.about-box h3{font-size:25px}
-.about-box p{color:var(--abu);font-size:15px;margin-bottom:13px}
-.about-list{list-style:none;margin-top:15px}
-.about-list li{padding:8px 0;color:#536172;font-size:14px}
-.about-list li::before{content:"✓";color:var(--emas);font-weight:900;margin-right:9px}
+.kampung h2 span{
+  color:#ffd66e;
+}
 
-.contact{background:var(--biru);color:#fff}
-.contact-content{max-width:900px;margin:auto;text-align:center}
-.contact-content h2{font-size:38px;line-height:1.2;margin-bottom:13px}
-.contact-content p{color:#d9e6f0;font-size:16px;margin-bottom:25px}
-.contact-buttons{display:flex;justify-content:center;flex-wrap:wrap;gap:12px}
-.contact .btn-primary{background:#fff;color:var(--biru)}
-.contact .btn-primary:hover{background:var(--emas);color:#fff}
+.kampung p{
+  color:#dbe8f2;
+  margin-bottom:22px;
+}
 
-footer{background:var(--biru-gelap);color:#b9c9d8;padding:28px 0}
-.footer-content{display:flex;align-items:center;justify-content:space-between;gap:20px}
-.footer-logo{color:#fff;font-weight:900}
-.footer-links{display:flex;gap:18px;flex-wrap:wrap}
-.footer-links a{color:#b9c9d8;font-size:13px}
-.footer-links a:hover{color:#fff}
+.kampung-box{
+  background:#fff;
+  color:#172033;
+  padding:28px;
+  border-radius:20px;
+  box-shadow:0 20px 50px rgba(0,0,0,.15);
+}
+
+.kampung-box h3{
+  color:var(--biru);
+  margin-bottom:16px;
+  font-size:22px;
+}
+
+.steps{
+  list-style:none;
+}
+
+.steps li{
+  display:flex;
+  gap:12px;
+  align-items:flex-start;
+  padding:11px 0;
+  border-bottom:1px solid var(--border);
+  font-size:14px;
+}
+
+.steps li:last-child{
+  border-bottom:0;
+}
+
+.step-number{
+  flex:0 0 30px;
+  height:30px;
+  border-radius:50%;
+  background:var(--emas-muda);
+  color:#9b6907;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:900;
+}
+
+/* =========================
+   VIDEO
+========================= */
+
+.video-section{
+  background:var(--abu-muda);
+}
+
+.video-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:26px;
+  max-width:1050px;
+  margin:auto;
+}
+
+.video-card{
+  overflow:hidden;
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:18px;
+  box-shadow:var(--shadow);
+}
+
+.video-frame{
+  position:relative;
+  width:100%;
+  aspect-ratio:16/9;
+  background:#000;
+}
+
+.video-frame iframe{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  border:0;
+}
+
+.video-info{
+  padding:19px 21px 21px;
+}
+
+.video-info h3{
+  color:var(--biru);
+  font-size:18px;
+  margin-bottom:7px;
+}
+
+.video-info p{
+  color:var(--abu);
+  font-size:14px;
+}
+
+/* =========================
+   SOCIAL
+========================= */
+
+.social-section{
+  background:#fff;
+}
+
+.social-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:24px;
+  max-width:900px;
+  margin:auto;
+}
+
+.social-card{
+  padding:28px;
+  border:1px solid var(--border);
+  border-radius:18px;
+  box-shadow:var(--shadow);
+}
+
+.social-card h3{
+  color:var(--biru);
+  font-size:21px;
+  margin-bottom:10px;
+}
+
+.social-card p{
+  color:var(--abu);
+  font-size:14px;
+  margin-bottom:18px;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.about{
+  background:linear-gradient(135deg,#f7fbfd,#fff);
+}
+
+.about-grid{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:45px;
+  align-items:center;
+}
+
+.about-box{
+  padding:32px;
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:20px;
+  box-shadow:var(--shadow);
+}
+
+.about-box h2,
+.about-box h3{
+  color:var(--biru);
+  margin-bottom:15px;
+}
+
+.about-box h2{
+  font-size:34px;
+  line-height:1.2;
+}
+
+.about-box h3{
+  font-size:25px;
+}
+
+.about-box p{
+  color:var(--abu);
+  font-size:15px;
+  margin-bottom:13px;
+}
+
+.about-list{
+  list-style:none;
+  margin-top:15px;
+}
+
+.about-list li{
+  padding:8px 0;
+  color:#536172;
+  font-size:14px;
+}
+
+.about-list li::before{
+  content:"✓";
+  color:var(--emas);
+  font-weight:900;
+  margin-right:9px;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact{
+  background:var(--biru);
+  color:#fff;
+}
+
+.contact-content{
+  max-width:900px;
+  margin:auto;
+  text-align:center;
+}
+
+.contact-content h2{
+  font-size:38px;
+  line-height:1.2;
+  margin-bottom:13px;
+}
+
+.contact-content p{
+  color:#d9e6f0;
+  font-size:16px;
+  margin-bottom:25px;
+}
+
+.contact-buttons{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:12px;
+}
+
+.contact .btn-primary{
+  background:#fff;
+  color:var(--biru);
+}
+
+.contact .btn-primary:hover{
+  background:var(--emas);
+  color:#fff;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+  background:var(--biru-gelap);
+  color:#b9c9d8;
+  padding:28px 0;
+}
+
+.footer-content{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+
+.footer-logo{
+  color:#fff;
+  font-weight:900;
+}
+
+.footer-links{
+  display:flex;
+  gap:18px;
+  flex-wrap:wrap;
+}
+
+.footer-links a{
+  color:#b9c9d8;
+  font-size:13px;
+}
+
+.footer-links a:hover{
+  color:#fff;
+}
+
+/* =========================
+   FLOATING WHATSAPP
+========================= */
 
 .floating-wa{
-  position:fixed;right:18px;bottom:18px;z-index:999;
-  width:58px;height:58px;border-radius:50%;display:flex;
-  align-items:center;justify-content:center;background:var(--hijau);color:#fff;
-  font-size:27px;box-shadow:0 10px 28px rgba(0,0,0,.2)
+  position:fixed;
+  right:18px;
+  bottom:18px;
+  z-index:999;
+  width:58px;
+  height:58px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:var(--hijau);
+  color:#fff;
+  font-size:27px;
+  box-shadow:0 10px 28px rgba(0,0,0,.2);
+  transition:.25s;
 }
-.floating-wa:hover{transform:scale(1.06)}
+
+.floating-wa:hover{
+  transform:scale(1.06);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
 
 @media(max-width:1000px){
-  .services-grid{grid-template-columns:repeat(2,1fr)}
-  .about-grid,.kampung-grid{grid-template-columns:1fr}
+
+  .services-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .about-grid,
+  .kampung-grid{
+    grid-template-columns:1fr;
+  }
 }
+
 @media(max-width:700px){
-  section{padding:62px 0}
-  .navbar{flex-direction:column;padding:15px 0}
-  .nav-menu{justify-content:center;gap:10px 15px;flex-wrap:wrap}
-  .nav-menu a{font-size:12px}
-  .hero{min-height:auto;padding:64px 0}
-  .hero h1{font-size:43px}
-  .hero p{font-size:16px}
-  .hero-buttons{flex-direction:column}
-  .hero-buttons .btn{width:100%}
-  .services-grid,.video-grid,.social-grid{grid-template-columns:1fr}
-  .kampung-box{padding:22px}
-  .about-box{padding:24px}
-  .about-box h2{font-size:29px}
-  .contact-content h2{font-size:30px}
-  .contact-buttons{flex-direction:column}
-  .contact-buttons .btn{width:100%}
-  .footer-content{flex-direction:column;text-align:center}
-  .footer-links{justify-content:center}
+
+  section{
+    padding:62px 0;
+  }
+
+  .navbar{
+    flex-direction:column;
+    padding:15px 0;
+  }
+
+  .nav-menu{
+    justify-content:center;
+    gap:10px 15px;
+    flex-wrap:wrap;
+  }
+
+  .nav-menu a{
+    font-size:12px;
+  }
+
+  .hero{
+    min-height:auto;
+    padding:64px 0;
+  }
+
+  .hero h1{
+    font-size:43px;
+  }
+
+  .hero p{
+    font-size:16px;
+  }
+
+  .hero-buttons{
+    flex-direction:column;
+  }
+
+  .hero-buttons .btn{
+    width:100%;
+  }
+
+  .services-grid,
+  .video-grid,
+  .social-grid{
+    grid-template-columns:1fr;
+  }
+
+  .kampung-box{
+    padding:22px;
+  }
+
+  .about-box{
+    padding:24px;
+  }
+
+  .about-box h2{
+    font-size:29px;
+  }
+
+  .contact-content h2{
+    font-size:30px;
+  }
+
+  .contact-buttons{
+    flex-direction:column;
+  }
+
+  .contact-buttons .btn{
+    width:100%;
+  }
+
+  .footer-content{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .footer-links{
+    justify-content:center;
+  }
 }
 </style>
+
 </head>
 
 <body>
 
+<!-- =========================
+     HEADER
+========================= -->
+
 <header>
   <div class="container">
-    <nav class="navbar">
-      <a href="#beranda" class="logo">JEJAK <span>MALUKU</span> STUDIO</a>
-      <ul class="nav-menu">
-        <li><a href="#beranda">Beranda</a></li>
-        <li><a href="#kampung">Kampungmu</a></li>
-        <li><a href="#layanan">Layanan</a></li>
-        <li><a href="#video">Video</a></li>
-        <li><a href="#tentang">Tentang</a></li>
-      </ul>
-    </nav>
+
+```
+<nav class="navbar">
+
+  <a href="#beranda" class="logo">
+    JEJAK <span>MALUKU</span> STUDIO
+  </a>
+
+  <ul class="nav-menu">
+    <li><a href="#beranda">Beranda</a></li>
+    <li><a href="#kampung">Kampungmu</a></li>
+    <li><a href="#layanan">Layanan</a></li>
+    <li><a href="#video">Video</a></li>
+    <li><a href="#tentang">Tentang</a></li>
+  </ul>
+
+</nav>
+```
+
   </div>
 </header>
 
 <main>
 
+<!-- =========================
+     HERO
+========================= -->
+
 <section id="beranda" class="hero">
+
   <div class="container">
-    <div class="hero-content">
-      <div class="badge">🏝️ Sejarah • Budaya • Adat • Wisata • UMKM</div>
 
-      <h1>Mengabadikan <span>Cerita Maluku</span> Untuk Dunia</h1>
+```
+<div class="hero-content">
 
-      <p>
-        Jejak Maluku Studio mengangkat sejarah, budaya, kampung, UMKM,
-        perusahaan dan berbagai cerita dari Maluku melalui video animasi
-        dan konten kreatif.
-      </p>
-
-      <div class="hero-buttons">
-        <a href="#kampung" class="btn btn-primary">🏡 Buat Video Kampungmu</a>
-        <a href="#layanan" class="btn btn-secondary">🎬 Lihat Layanan</a>
-        <a href="https://wa.me/6281247425536?text=Halo%20Jejak%20Maluku%20Studio%2C%20saya%20ingin%20bertanya%20tentang%20layanan%20yang%20tersedia." class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">💬 Chat WhatsApp</a>
-      </div>
-    </div>
+  <div class="badge">
+    🏝️ Sejarah • Budaya • Adat • Wisata • UMKM
   </div>
+
+  <h1>
+    Mengabadikan <span>Cerita Maluku</span> Untuk Dunia
+  </h1>
+
+  <p>
+    Jejak Maluku Studio mengangkat sejarah, budaya, kampung, UMKM,
+    perusahaan dan berbagai cerita dari Maluku melalui video animasi
+    dan konten kreatif.
+  </p>
+
+  <div class="hero-buttons">
+
+    <a href="#kampung" class="btn btn-primary">
+      🏡 Buat Video Kampungmu
+    </a>
+
+    <a href="#layanan" class="btn btn-secondary">
+      🎬 Lihat Layanan
+    </a>
+
+    <a
+      href="https://wa.me/6281247425536?text=Halo%20Jejak%20Maluku%20Studio%2C%20saya%20ingin%20bertanya%20tentang%20layanan%20yang%20tersedia."
+      class="btn btn-whatsapp"
+      target="_blank"
+      rel="noopener noreferrer">
+      💬 Chat WhatsApp
+    </a>
+
+  </div>
+
+</div>
+```
+
+  </div>
+
 </section>
+
+<!-- =========================
+     KAMPUNG
+========================= -->
 
 <section id="kampung" class="kampung">
+
   <div class="container">
-    <div class="kampung-grid">
 
-      <div>
-        <div class="badge">🏡 UNTUK KAMPUNG & DESA DI MALUKU</div>
-        <h2>Kampungmu Punya <span>Cerita?</span></h2>
-        <p>
-          Sejarah kampung, asal-usul, tokoh, adat, tradisi, wisata dan
-          cerita masyarakat dapat diabadikan menjadi video animasi
-          Jejak Maluku.
-        </p>
-        <a href="https://docs.google.com/forms/d/1xn45aRwqRJtgoW8CrRGPm5Bha54Ojv9dLq9VH4Qxhyk/preview" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
-          📖 Kirim Cerita Kampung
-        </a>
-      </div>
+```
+<div class="kampung-grid">
 
-      <div class="kampung-box">
-        <h3>Bagaimana prosesnya?</h3>
-        <ol class="steps">
-          <li><span class="step-number">1</span><span><strong>Kirim cerita</strong><br>Isi informasi tentang kampungmu melalui formulir.</span></li>
-          <li><span class="step-number">2</span><span><strong>Pilih paket dukungan</strong><br>Pilih paket yang sesuai dengan kebutuhan produksi.</span></li>
-          <li><span class="step-number">3</span><span><strong>Lakukan pembayaran</strong><br>Ikuti petunjuk pembayaran yang tersedia di formulir.</span></li>
-          <li><span class="step-number">4</span><span><strong>Masuk database cerita</strong><br>Data cerita diterima dan dicatat oleh Jejak Maluku Studio.</span></li>
-          <li><span class="step-number">5</span><span><strong>Diproses</strong><br>Cerita dipersiapkan untuk produksi video.</span></li>
-        </ol>
-      </div>
+  <div>
 
+    <div class="badge">
+      🏡 UNTUK KAMPUNG & DESA DI MALUKU
     </div>
+
+    <h2>
+      Kampungmu Punya <span>Cerita?</span>
+    </h2>
+
+    <p>
+      Sejarah kampung, asal-usul, tokoh, adat, tradisi, wisata dan
+      cerita masyarakat dapat diabadikan menjadi video animasi
+      Jejak Maluku.
+    </p>
+
+    <!-- SATU LINK FORM CERITA -->
+
+    <a
+      href="https://docs.google.com/forms/d/1xn45aRwqRJtgoW8CrRGPm5Bha54Ojv9dLq9VH4Qxhyk/preview"
+      class="btn btn-whatsapp"
+      target="_blank"
+      rel="noopener noreferrer">
+      📖 Kirim Cerita Kampung
+    </a>
+
   </div>
+
+  <div class="kampung-box">
+
+    <h3>Bagaimana prosesnya?</h3>
+
+    <ol class="steps">
+
+      <li>
+        <span class="step-number">1</span>
+        <span>
+          <strong>Kirim cerita</strong><br>
+          Isi informasi tentang kampungmu melalui formulir.
+        </span>
+      </li>
+
+      <li>
+        <span class="step-number">2</span>
+        <span>
+          <strong>Pilih paket dukungan</strong><br>
+          Pilih paket yang sesuai dengan kebutuhan produksi.
+        </span>
+      </li>
+
+      <li>
+        <span class="step-number">3</span>
+        <span>
+          <strong>Lakukan pembayaran</strong><br>
+          Ikuti petunjuk pembayaran yang tersedia di formulir.
+        </span>
+      </li>
+
+      <li>
+        <span class="step-number">4</span>
+        <span>
+          <strong>Masuk database cerita</strong><br>
+          Data cerita diterima dan dicatat oleh Jejak Maluku Studio.
+        </span>
+      </li>
+
+      <li>
+        <span class="step-number">5</span>
+        <span>
+          <strong>Diproses</strong><br>
+          Cerita dipersiapkan untuk produksi video.
+        </span>
+      </li>
+
+    </ol>
+
+  </div>
+
+</div>
+```
+
+  </div>
+
 </section>
+
+<!-- =========================
+     LAYANAN
+========================= -->
 
 <section id="layanan" class="services">
+
   <div class="container">
-    <div class="section-heading">
-      <h2>Apa yang Bisa Kami Bantu?</h2>
-      <p>Pilih kebutuhan Anda. Setiap tombol langsung mengarah ke langkah berikutnya.</p>
-    </div>
 
-    <div class="services-grid">
+```
+<div class="section-heading">
 
-      <div class="service-card">
-        <div class="service-icon">🏝️</div>
-        <h3>Video Sejarah & Budaya</h3>
-        <p>Video sejarah desa, budaya, cerita rakyat, tokoh, tradisi dan wisata Maluku.</p>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOPaHfWRRg0ts6qv-ZRY34J5hQ391imH-QsuzZHSrNPLDyXQ/viewform" class="card-btn" target="_blank" rel="noopener noreferrer">📋 Ajukan Proyek</a>
-      </div>
+  <h2>Apa yang Bisa Kami Bantu?</h2>
 
-      <div class="service-card">
-        <div class="service-icon">🏪</div>
-        <h3>Promosi UMKM</h3>
-        <p>Promosikan UMKM melalui video promosi, konten media sosial dan iklan papan LED.</p>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfBiZ00KnQS4yCeYljfIm2MvpE18rBURSx5ILevX8nd57SOg/viewform" class="card-btn" target="_blank" rel="noopener noreferrer">📣 Promosikan UMKM</a>
-      </div>
+  <p>
+    Pilih kebutuhan Anda. Setiap tombol langsung mengarah
+    ke langkah berikutnya.
+  </p>
 
-      <div class="service-card">
-        <div class="service-icon">🏡</div>
-        <h3>Video Kampung & Desa</h3>
-        <p>Abadikan cerita sejarah, adat, budaya, tokoh dan potensi kampungmu dalam video animasi.</p>
-        <a href="https://docs.google.com/forms/d/1xn45aRwqRJtgoW8CrRGPm5Bha54Ojv9dLq9VH4Qxhyk/preview" class="card-btn" target="_blank" rel="noopener noreferrer">📖 Kirim Cerita</a>
-      </div>
+</div>
 
-      <div class="service-card">
-        <div class="service-icon">🏢</div>
-        <h3>Video Perusahaan & Instansi</h3>
-        <p>Video profil, dokumentasi kegiatan, program, promosi dan kebutuhan visual profesional.</p>
-        <a href="#kontak" class="card-btn">💬 Konsultasi Proyek</a>
-      </div>
+<div class="services-grid">
 
-    </div>
+  <!-- SEJARAH & BUDAYA -->
+
+  <div class="service-card">
+
+    <div class="service-icon">🏝️</div>
+
+    <h3>
+      Video Sejarah & Budaya
+    </h3>
+
+    <p>
+      Video sejarah desa, budaya, cerita rakyat, tokoh,
+      tradisi dan wisata Maluku.
+    </p>
+
+    <!-- LINK FORM YANG SAMA -->
+
+    <a
+      href="https://docs.google.com/forms/d/1xn45aRwqRJtgoW8CrRGPm5Bha54Ojv9dLq9VH4Qxhyk/preview"
+      class="card-btn"
+      target="_blank"
+      rel="noopener noreferrer">
+      📖 Kirim Cerita
+    </a>
+
   </div>
+
+
+  <!-- UMKM -->
+
+  <div class="service-card">
+
+    <div class="service-icon">🏪</div>
+
+    <h3>
+      Promosi UMKM
+    </h3>
+
+    <p>
+      Promosikan UMKM melalui video promosi, konten media sosial
+      dan iklan papan LED.
+    </p>
+
+    <!-- LANGSUNG WHATSAPP -->
+
+    <a
+      href="https://wa.me/6281247425536?text=Halo%20Jejak%20Maluku%20Studio%2C%20saya%20ingin%20konsultasi%20tentang%20Promosi%20UMKM."
+      class="card-btn whatsapp"
+      target="_blank"
+      rel="noopener noreferrer">
+      💬 Konsultasi WhatsApp
+    </a>
+
+  </div>
+
+
+  <!-- KAMPUNG & DESA -->
+
+  <div class="service-card">
+
+    <div class="service-icon">🏡</div>
+
+    <h3>
+      Video Kampung & Desa
+    </h3>
+
+    <p>
+      Abadikan cerita sejarah, adat, budaya, tokoh dan potensi
+      kampungmu dalam video animasi.
+    </p>
+
+    <!-- LINK FORM YANG SAMA -->
+
+    <a
+      href="https://docs.google.com/forms/d/1xn45aRwqRJtgoW8CrRGPm5Bha54Ojv9dLq9VH4Qxhyk/preview"
+      class="card-btn"
+      target="_blank"
+      rel="noopener noreferrer">
+      📖 Kirim Cerita
+    </a>
+
+  </div>
+
+
+  <!-- PERUSAHAAN & INSTANSI -->
+
+  <div class="service-card">
+
+    <div class="service-icon">🏢</div>
+
+    <h3>
+      Video Perusahaan & Instansi
+    </h3>
+
+    <p>
+      Video profil, dokumentasi kegiatan, program, promosi
+      dan kebutuhan visual profesional.
+    </p>
+
+    <!-- LANGSUNG WHATSAPP -->
+
+    <a
+      href="https://wa.me/6281247425536?text=Halo%20Jejak%20Maluku%20Studio%2C%20saya%20ingin%20konsultasi%20tentang%20Video%20Perusahaan%20atau%20Instansi."
+      class="card-btn whatsapp"
+      target="_blank"
+      rel="noopener noreferrer">
+      💬 Konsultasi WhatsApp
+    </a>
+
+  </div>
+
+</div>
+```
+
+  </div>
+
 </section>
+
+<!-- =========================
+     VIDEO
+========================= -->
 
 <section id="video" class="video-section">
+
   <div class="container">
-    <div class="section-heading">
-      <h2>🎬 Contoh Karya Jejak Maluku</h2>
-      <p>Lihat beberapa contoh karya video yang telah dibuat untuk kebutuhan promosi, edukasi dan informasi.</p>
-    </div>
 
-    <div class="video-grid">
+```
+<div class="section-heading">
 
-      <div class="video-card">
-        <div class="video-frame">
-          <iframe src="https://www.youtube.com/embed/vSBV6iT5arE" title="Iklan Kuliner Profesional" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-        <div class="video-info"><h3>Iklan Kuliner Profesional</h3><p>Contoh presentasi visual untuk meningkatkan daya tarik produk kuliner.</p></div>
-      </div>
+  <h2>🎬 Contoh Karya Jejak Maluku</h2>
 
-      <div class="video-card">
-        <div class="video-frame">
-          <iframe src="https://www.youtube.com/embed/QcAeP4eBHDc" title="Promosi dan Iklan Produk" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-        <div class="video-info"><h3>Promosi & Iklan Produk</h3><p>Video kreatif untuk meningkatkan nilai jual dan daya tarik produk.</p></div>
-      </div>
+  <p>
+    Lihat beberapa contoh karya video yang telah dibuat
+    untuk kebutuhan promosi, edukasi dan informasi.
+  </p>
 
-      <div class="video-card">
-        <div class="video-frame">
-          <iframe src="https://www.youtube.com/embed/fnlh7AeBUmQ" title="Video Iklan Kuliner" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-        <div class="video-info"><h3>Video Iklan Kuliner</h3><p>Contoh visual promosi untuk produk kuliner dan restoran.</p></div>
-      </div>
+</div>
 
-      <div class="video-card">
-        <div class="video-frame">
-          <iframe src="https://www.youtube.com/embed/zq-5UnJBtJw" title="Video Edukasi dan Informasi Publik" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-        <div class="video-info"><h3>Video Edukasi & Informasi Publik</h3><p>Contoh penyampaian informasi layanan secara jelas dan mudah dipahami.</p></div>
-      </div>
+<div class="video-grid">
+
+  <div class="video-card">
+
+    <div class="video-frame">
+
+      <iframe
+        src="https://www.youtube.com/embed/vSBV6iT5arE"
+        title="Iklan Kuliner Profesional"
+        loading="lazy"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
 
     </div>
+
+    <div class="video-info">
+
+      <h3>Iklan Kuliner Profesional</h3>
+
+      <p>
+        Contoh presentasi visual untuk meningkatkan
+        daya tarik produk kuliner.
+      </p>
+
+    </div>
+
   </div>
+
+
+  <div class="video-card">
+
+    <div class="video-frame">
+
+      <iframe
+        src="https://www.youtube.com/embed/QcAeP4eBHDc"
+        title="Promosi dan Iklan Produk"
+        loading="lazy"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+
+    </div>
+
+    <div class="video-info">
+
+      <h3>Promosi & Iklan Produk</h3>
+
+      <p>
+        Video kreatif untuk meningkatkan nilai jual
+        dan daya tarik produk.
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <div class="video-card">
+
+    <div class="video-frame">
+
+      <iframe
+        src="https://www.youtube.com/embed/fnlh7AeBUmQ"
+        title="Video Iklan Kuliner"
+        loading="lazy"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+
+    </div>
+
+    <div class="video-info">
+
+      <h3>Video Iklan Kuliner</h3>
+
+      <p>
+        Contoh visual promosi untuk produk kuliner
+        dan restoran.
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <div class="video-card">
+
+    <div class="video-frame">
+
+      <iframe
+        src="https://www.youtube.com/embed/zq-5UnJBtJw"
+        title="Video Edukasi dan Informasi Publik"
+        loading="lazy"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+
+    </div>
+
+    <div class="video-info">
+
+      <h3>Video Edukasi & Informasi Publik</h3>
+
+      <p>
+        Contoh penyampaian informasi layanan secara jelas
+        dan mudah dipahami.
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
+```
+
+  </div>
+
 </section>
+
+<!-- =========================
+     SOCIAL MEDIA
+========================= -->
 
 <section class="social-section">
+
   <div class="container">
-    <div class="section-heading">
-      <h2>Ikuti Jejak Maluku</h2>
-      <p>Temukan lebih banyak cerita, video dan karya kreatif Jejak Maluku di media sosial.</p>
-    </div>
 
-    <div class="social-grid">
-      <div class="social-card">
-        <h3>▶️ YouTube</h3>
-        <p>Saksikan video sejarah, budaya, kampung, UMKM dan berbagai cerita Maluku lainnya.</p>
-        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Kunjungi YouTube</a>
-      </div>
+```
+<div class="section-heading">
 
-      <div class="social-card">
-        <h3>🎵 TikTok</h3>
-        <p>Temukan video pendek dan konten kreatif Jejak Maluku Studio.</p>
-        <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Kunjungi TikTok</a>
-      </div>
-    </div>
+  <h2>Ikuti Jejak Maluku</h2>
+
+  <p>
+    Temukan lebih banyak cerita, video dan karya kreatif
+    Jejak Maluku di media sosial.
+  </p>
+
+</div>
+
+<div class="social-grid">
+
+  <div class="social-card">
+
+    <h3>▶️ YouTube</h3>
+
+    <p>
+      Saksikan video sejarah, budaya, kampung, UMKM
+      dan berbagai cerita Maluku lainnya.
+    </p>
+
+    <a
+      href="https://www.youtube.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="btn btn-secondary">
+      Kunjungi YouTube
+    </a>
+
   </div>
+
+
+  <div class="social-card">
+
+    <h3>🎵 TikTok</h3>
+
+    <p>
+      Temukan video pendek dan konten kreatif
+      Jejak Maluku Studio.
+    </p>
+
+    <a
+      href="https://www.tiktok.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="btn btn-secondary">
+      Kunjungi TikTok
+    </a>
+
+  </div>
+
+</div>
+```
+
+  </div>
+
 </section>
+
+<!-- =========================
+     TENTANG
+========================= -->
 
 <section id="tentang" class="about">
+
   <div class="container">
-    <div class="about-grid">
 
-      <div class="about-box">
-        <h2>Tentang Jejak Maluku Studio</h2>
-        <p>Jejak Maluku Studio hadir untuk mendokumentasikan dan memperkenalkan cerita-cerita Maluku melalui karya visual.</p>
-        <p>Kami percaya bahwa setiap kampung, tradisi, usaha dan orang memiliki cerita yang layak dikenal lebih luas.</p>
-        <ul class="about-list">
-          <li>Sejarah dan budaya Maluku</li>
-          <li>Cerita kampung dan desa</li>
-          <li>Promosi UMKM</li>
-          <li>Video perusahaan dan instansi</li>
-          <li>Dokumentasi dan konten kreatif</li>
-        </ul>
-      </div>
+```
+<div class="about-grid">
 
-      <div class="about-box">
-        <h3>Dari Maluku Untuk Dunia</h3>
-        <p>Mari bersama-sama menjaga cerita, mengenalkan potensi daerah dan memperkenalkan Maluku melalui media digital.</p>
-        <p>Sebuah cerita sederhana dari sebuah kampung dapat menjadi sesuatu yang dikenal oleh dunia.</p>
-        <a href="https://docs.google.com/forms/d/1xn45aRwqRJtgoW8CrRGPm5Bha54Ojv9dLq9VH4Qxhyk/preview" class="btn btn-primary" target="_blank" rel="noopener noreferrer">📖 Ceritakan Kampungmu</a>
-      </div>
+  <div class="about-box">
 
-    </div>
+    <h2>
+      Tentang Jejak Maluku Studio
+    </h2>
+
+    <p>
+      Jejak Maluku Studio hadir untuk mendokumentasikan
+      dan memperkenalkan cerita-cerita Maluku melalui
+      karya visual.
+    </p>
+
+    <p>
+      Kami percaya bahwa setiap kampung, tradisi, usaha
+      dan orang memiliki cerita yang layak dikenal lebih luas.
+    </p>
+
+    <ul class="about-list">
+
+      <li>Sejarah dan budaya Maluku</li>
+      <li>Cerita kampung dan desa</li>
+      <li>Promosi UMKM</li>
+      <li>Video perusahaan dan instansi</li>
+      <li>Dokumentasi dan konten kreatif</li>
+
+    </ul>
+
   </div>
+
+
+  <div class="about-box">
+
+    <h3>
+      Dari Maluku Untuk Dunia
+    </h3>
+
+    <p>
+      Mari bersama-sama menjaga cerita, mengenalkan potensi
+      daerah dan memperkenalkan Maluku melalui media digital.
+    </p>
+
+    <p>
+      Sebuah cerita sederhana dari sebuah kampung dapat
+      menjadi sesuatu yang dikenal oleh dunia.
+    </p>
+
+    <!-- FORM CERITA YANG SAMA -->
+
+    <a
+      href="https://docs.google.com/forms/d/1xn45aRwqRJtgoW8CrRGPm5Bha54Ojv9dLq9VH4Qxhyk/preview"
+      class="btn btn-primary"
+      target="_blank"
+      rel="noopener noreferrer">
+      📖 Ceritakan Kampungmu
+    </a>
+
+  </div>
+
+</div>
+```
+
+  </div>
+
 </section>
 
-<section id="kontak" class="contact">
-  <div class="container">
-    <div class="contact-content">
-      <h2>Punya Cerita atau Proyek?</h2>
-      <p>Untuk pertanyaan, kerja sama, video UMKM, perusahaan, instansi atau kebutuhan lainnya, silakan hubungi Jejak Maluku Studio.</p>
+<!-- =========================
+     CONTACT
+========================= -->
 
-      <div class="contact-buttons">
-        <a href="https://wa.me/6281247425536?text=Halo%20Jejak%20Maluku%20Studio%2C%20saya%20ingin%20bertanya%20tentang%20layanan%20yang%20tersedia." class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">💬 Chat WhatsApp</a>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOPaHfWRRg0ts6qv-ZRY34J5hQ391imH-QsuzZHSrNPLDyXQ/viewform" target="_blank" rel="noopener noreferrer" class="btn btn-primary">📋 Ajukan Proyek</a>
-        <a href="https://docs.google.com/forms/d/1xn45aRwqRJtgoW8CrRGPm5Bha54Ojv9dLq9VH4Qxhyk/preview" target="_blank" rel="noopener noreferrer" class="btn btn-primary">📖 Kirim Cerita</a>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfBiZ00KnQS4yCeYljfIm2MvpE18rBURSx5ILevX8nd57SOg/viewform" target="_blank" rel="noopener noreferrer" class="btn btn-primary">🏪 Promosikan UMKM</a>
-      </div>
-    </div>
+<section id="kontak" class="contact">
+
+  <div class="container">
+
+```
+<div class="contact-content">
+
+  <h2>
+    Punya Cerita atau Proyek?
+  </h2>
+
+  <p>
+    Untuk pertanyaan, kerja sama, video UMKM, perusahaan,
+    instansi atau kebutuhan lainnya, silakan hubungi
+    Jejak Maluku Studio.
+  </p>
+
+  <div class="contact-buttons">
+
+    <!-- WHATSAPP -->
+
+    <a
+      href="https://wa.me/6281247425536?text=Halo%20Jejak%20Maluku%20Studio%2C%20saya%20ingin%20bertanya%20tentang%20layanan%20yang%20tersedia."
+      class="btn btn-whatsapp"
+      target="_blank"
+      rel="noopener noreferrer">
+      💬 Chat WhatsApp
+    </a>
+
+    <!-- FORM CERITA -->
+
+    <a
+      href="https://docs.google.com/forms/d/1xn45aRwqRJtgoW8CrRGPm5Bha54Ojv9dLq9VH4Qxhyk/preview"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="btn btn-primary">
+      📖 Kirim Cerita
+    </a>
+
   </div>
+
+</div>
+```
+
+  </div>
+
 </section>
 
 </main>
 
+<!-- =========================
+     FOOTER
+========================= -->
+
 <footer>
+
   <div class="container">
-    <div class="footer-content">
-      <div class="footer-logo">JEJAK MALUKU STUDIO</div>
-      <div id="copyright">© 2026 Jejak Maluku Studio</div>
-      <div class="footer-links">
-        <a href="#beranda">Beranda</a>
-        <a href="#kampung">Kampungmu</a>
-        <a href="#layanan">Layanan</a>
-        <a href="#video">Video</a>
-        <a href="#tentang">Tentang</a>
-        <a href="#kontak">Kontak</a>
-      </div>
-    </div>
+
+```
+<div class="footer-content">
+
+  <div class="footer-logo">
+    JEJAK MALUKU STUDIO
   </div>
+
+  <div id="copyright">
+    © 2026 Jejak Maluku Studio
+  </div>
+
+  <div class="footer-links">
+
+    <a href="#beranda">Beranda</a>
+    <a href="#kampung">Kampungmu</a>
+    <a href="#layanan">Layanan</a>
+    <a href="#video">Video</a>
+    <a href="#tentang">Tentang</a>
+    <a href="#kontak">Kontak</a>
+
+  </div>
+
+</div>
+```
+
+  </div>
+
 </footer>
 
-<a href="https://wa.me/6281247425536?text=Halo%20Jejak%20Maluku%20Studio%2C%20saya%20ingin%20bertanya%20tentang%20layanan%20yang%20tersedia." class="floating-wa" target="_blank" rel="noopener noreferrer" aria-label="Chat WhatsApp">💬</a>
+<!-- =========================
+     FLOATING WHATSAPP
+========================= -->
+
+<a
+href="https://wa.me/6281247425536?text=Halo%20Jejak%20Maluku%20Studio%2C%20saya%20ingin%20bertanya%20tentang%20layanan%20yang%20tersedia."
+class="floating-wa"
+target="_blank"
+rel="noopener noreferrer"
+aria-label="Chat WhatsApp">
+💬 </a>
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
 
 <script>
+
 document.querySelectorAll('a[href^="#"]').forEach(function(link){
+
   link.addEventListener("click",function(event){
-    const id=this.getAttribute("href");
-    if(id==="#" ) return;
-    const target=document.querySelector(id);
+
+    const id = this.getAttribute("href");
+
+    if(id === "#") return;
+
+    const target = document.querySelector(id);
+
     if(target){
+
       event.preventDefault();
-      target.scrollIntoView({behavior:"smooth",block:"start"});
+
+      target.scrollIntoView({
+        behavior:"smooth",
+        block:"start"
+      });
+
     }
+
   });
+
 });
-document.getElementById("copyright").textContent="© "+new Date().getFullYear()+" Jejak Maluku Studio";
+
+
+document.getElementById("copyright").textContent =
+  "© " + new Date().getFullYear() + " Jejak Maluku Studio";
+
 </script>
 
 </body>
