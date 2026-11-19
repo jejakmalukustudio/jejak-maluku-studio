@@ -36,7 +36,7 @@
     .btn-outline{border-color:rgba(255,255,255,.45);color:white}
     .btn-light{background:white;color:var(--navy);border-color:var(--line)}
     .menu-toggle{display:none;background:none;border:0;font-size:25px;color:var(--navy)}
-    .hero{position:relative;overflow:hidden;background:linear-gradient(115deg,rgba(5,31,45,.96),rgba(12,66,77,.88)),url('https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1900&q=85') center/cover;color:white;padding:105px 0 96px}
+    .hero{position:relative;overflow:hidden;background:linear-gradient(90deg,rgba(5,31,45,.88) 0%,rgba(5,31,45,.62) 44%,rgba(5,31,45,.12) 100%),url('background-jejak-maluku.jpg') center center/cover no-repeat;color:white;padding:105px 0 96px;min-height:620px;display:flex;align-items:center}
     .hero:after{content:"";position:absolute;width:520px;height:520px;border:1px solid rgba(255,255,255,.12);border-radius:50%;right:-130px;top:-180px;box-shadow:0 0 0 55px rgba(255,255,255,.025),0 0 0 110px rgba(255,255,255,.02)}
     .hero-content{position:relative;z-index:1;max-width:760px}
     .eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--gold);font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase}
@@ -114,7 +114,7 @@
     @media(max-width:950px){.services-grid{grid-template-columns:repeat(2,1fr)}.process-grid{grid-template-columns:repeat(2,1fr)}.navlinks{gap:14px}.navlinks a{font-size:12px}}
     @media(max-width:700px){
       .container{width:min(100% - 30px,560px)}.nav{height:68px}.menu-toggle{display:block}.navlinks{display:none;position:absolute;top:68px;left:0;right:0;background:white;padding:18px 25px 24px;box-shadow:0 15px 25px rgba(9,43,61,.1);flex-direction:column;align-items:flex-start}.navlinks.open{display:flex}.nav-cta{display:none}
-      .hero{padding:76px 0 70px}.hero p{font-size:15px}.trust-items{grid-template-columns:1fr 1fr;gap:17px}.trust-item{font-size:11px}
+      .hero{padding:76px 0 70px;min-height:560px;background-position:58% center}.hero p{font-size:15px}.trust-items{grid-template-columns:1fr 1fr;gap:17px}.trust-item{font-size:11px}
       section{padding:66px 0}.services-grid{grid-template-columns:1fr}.service-card{min-height:0}.portfolio-grid{grid-template-columns:1fr}.process-grid{grid-template-columns:1fr 1fr}.about-grid,.contact-grid{grid-template-columns:1fr;gap:28px}.about-visual{min-height:270px}.story-band{display:block;padding:28px 24px}.story-band .btn{margin-top:20px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.footer-top{display:block}.footer-links{margin-top:18px}.wa-float{right:12px;bottom:12px}
     }
     @media(max-width:390px){.process-grid{grid-template-columns:1fr}.hero-actions .btn{width:100%}}
